@@ -13,6 +13,7 @@ function LocationFinder( {locationInfo} ) {
     const sendRequest = () => {
         if(location === "") return;
         const limit = 1;
+        console.log("test")
         const apiLink = `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=${limit}&appid=${process.env.REACT_APP_openweather_api}`
         fetch(apiLink)
         .then(res => res.json())

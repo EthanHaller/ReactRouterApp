@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import Home from './Home.js'
 import Game from './Game.js'
+import { AppBar, Toolbar, Button } from '@mui/material';
 
 function App() {
   const [showHome, setShowHome] = useState(true);
@@ -18,7 +19,14 @@ function App() {
 
   if(showHome) {
     return (
-      <Home link={(link => handleLinkChange(link))} changeView={(value) => setShowHome(value)} changeNumQuestions={(num) => handleNumberChange(num)}></Home>
+      <React.Fragment>
+        <AppBar>
+          <Toolbar>
+
+          </Toolbar>
+        </AppBar>
+        <Home link={(link => handleLinkChange(link))} changeView={(value) => setShowHome(value)} changeNumQuestions={(num) => handleNumberChange(num)}></Home>
+      </React.Fragment>
     )
   }
   else {

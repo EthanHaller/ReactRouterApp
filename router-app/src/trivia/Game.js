@@ -47,7 +47,7 @@ function Game( {apiLink, numberOfQuestions} ) {
       <React.Fragment>
         <h2 className='header'>Game Over!</h2>
         <p id={"score"}>Your final score was {score}/{numberOfQuestions}</p>
-        <Button id={"play_again"} variant='contained' href="./">Play Again?</Button>
+        <Button id={"play_again"} variant='contained' href="./trivia">Play Again?</Button>
       </React.Fragment>
     )
   }
