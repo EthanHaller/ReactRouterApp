@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import './styles.css'
+import './tictactoestyles.css'
+import { AppBar, Toolbar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Square({ value, onSquareClick, isWinner }) {
   if(isWinner){
@@ -33,7 +35,14 @@ function Board({ xIsNext, squares, onPlay }) {
   else status = "Winner: " + winner[0];
   
   return (
-    <React.Fragment>
+    <React.Fragment className="tictactoe-body">
+      <AppBar>
+        <Toolbar>
+            <Link to="/tictactoe">Tic Tac Toe</Link>
+            <Link to="/trivia">Trivia</Link>
+            <Link to="/weather-news">Weather and News</Link>
+        </Toolbar>
+      </AppBar>
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} isWinner={winningRows[0]}/>

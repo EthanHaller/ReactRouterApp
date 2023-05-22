@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Box, CssBaseline, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 import LocationFinder from './LocationFinder';
 import Weather from './Weather';
 import UnitsButton from './UnitsButton';
@@ -18,6 +19,9 @@ function App() {
         <CssBaseline />
         <AppBar>
           <Toolbar>
+            <Link to="/tictactoe">Tic Tac Toe</Link>
+            <Link to="/trivia">Trivia</Link>
+            <Link to="/weather-news">Weather and News</Link>
             <LocationFinder locationInfo={(i) => setLocationDetails(i)}></LocationFinder>
             <UnitsButton changeUnits={(u) => setUnits(u)}></UnitsButton>
           </Toolbar>
@@ -35,6 +39,9 @@ function App() {
         <CssBaseline />
         <AppBar>
           <Toolbar>
+            <Link to="/tictactoe">Tic Tac Toe</Link>
+            <Link to="/trivia">Trivia</Link>
+            <Link to="/weather-news">Weather and News</Link>
             <LocationFinder locationInfo={(i) => setLocationDetails(i)}></LocationFinder>
             <UnitsButton changeUnits={(u) => setUnits(u)}></UnitsButton>
           </Toolbar>
