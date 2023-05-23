@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Box, CssBaseline, Typography } from '@mui/material';
+import { AppBar, Toolbar, Box, CssBaseline, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import LocationFinder from './LocationFinder';
 import Weather from './Weather';
@@ -39,9 +39,9 @@ function App() {
         <CssBaseline />
         <AppBar>
           <Toolbar>
-            <Link to="/tictactoe">Tic Tac Toe</Link>
-            <Link to="/trivia">Trivia</Link>
-            <Link to="/weather-news">Weather and News</Link>
+            <Button variant='contained' sx={{ color: 'white', mr: '15px' }} component={Link} to="/tictactoe">Tic Tac Toe</Button>
+            <Button variant='contained' sx={{ color: 'white', mr: '15px' }} component={Link} to="/trivia">Trivia</Button>
+            <Button variant='contained' sx={{ color: 'white', mr: '15px' }} component={Link} to="/weather-news">Weather and News</Button>
             <LocationFinder locationInfo={(i) => setLocationDetails(i)}></LocationFinder>
             <UnitsButton changeUnits={(u) => setUnits(u)}></UnitsButton>
           </Toolbar>

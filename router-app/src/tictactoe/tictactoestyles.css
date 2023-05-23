@@ -6,11 +6,15 @@
 
 h1 {
   text-align: center;
+  padding-top: 2%;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
   font-size: 75px;
   color: #00aeff;
   text-shadow: 0px 0px 20px #00aeff;
+  background-color: #414141;
 }
 
 code {
@@ -36,27 +40,27 @@ body {
   background: #2a2a2a;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 80px;
   font-weight: bold;
-  height: 150px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 150px;
+  width: 100px;
 }
 .square-winner {
   background: #000000;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 80px;
   font-weight: bold;
-  height: 150px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 150px;
+  width: 100px;
 }
 
 .board-row:after {
@@ -94,14 +98,14 @@ body {
 }
 
 #X {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   color: #00aeff;
   text-shadow: 0px 0px 20px #00aeff;
 }
 
 #O {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   color: #ff1f1f;
   text-shadow: 0px 0px 20px #ff1f1f;
@@ -109,7 +113,7 @@ body {
 
 #X-win {
   background-color: #00496b;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   color: #00aeff;
   text-shadow: 0px 0px 20px #00aeff;
@@ -117,7 +121,7 @@ body {
 
 #O-win {
   background-color: #590a0a;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   color: #ff1f1f;
   text-shadow: 0px 0px 20px #ff1f1f;
